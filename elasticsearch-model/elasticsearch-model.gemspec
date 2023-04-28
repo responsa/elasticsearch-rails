@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.4'
 
   s.add_dependency 'activesupport', '> 3'
-  s.add_dependency 'elasticsearch', '~> 7'
+  s.add_dependency 'elasticsearch', '>= 8.3.0', '<= 8.7'
   s.add_dependency 'hashie'
 
   s.add_development_dependency 'activemodel', '> 3'
@@ -63,6 +63,6 @@ Gem::Specification.new do |s|
   unless defined?(JRUBY_VERSION)
     s.add_development_dependency 'oj'
     s.add_development_dependency 'ruby-prof'
-    s.add_development_dependency 'sqlite3'
+    s.add_development_dependency 'sqlite3', '~> 1.4'
   end
 end

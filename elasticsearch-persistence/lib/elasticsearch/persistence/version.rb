@@ -17,6 +17,6 @@
 
 module Elasticsearch
   module Persistence
-    VERSION = '7.2.1'
+    VERSION = '8.4.3'
   end
 end
